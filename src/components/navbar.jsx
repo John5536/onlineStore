@@ -16,4 +16,18 @@ function Navbar(){
     );
 }
 
+function footer(){
+    <div>
+        <h4>Created by Jonathan</h4>
+    </div>
+    
+}
+
+function Product(){
+    <div>
+        <h4>Available Products</h4>
+    </div>
+}
+
 export default Navbar;
+
