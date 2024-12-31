@@ -7,8 +7,13 @@ function App() {
     <div className="App">
        <Navbar></Navbar>
        <h1>Hello world from react</h1>
-       <footer></footer>
-       <product></product>
+       <Catalog></Catalog>
+       <Product></Product>
+       <Product></Product>
+       <Product></Product>
+       <Product></Product>
+       <Footer></Footer>
+       
        
       
     </div>
