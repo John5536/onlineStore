@@ -1,18 +1,18 @@
 .product {
-    background-color: aliceblue;
+    background-color: white;
     border: 1px solid gray;
     border-radius: 4px;
     padding: 10px;
 
     height: 350px;
-    width: 250px;
+    width: 270px;
 
     display: inline-block;
-    margin-right: 10px;
+    margin:0 10px 10px 0;
 }
 
 .product img {
-    width: 110px;
+    width: 250px;
 }
 
 .product h3 {

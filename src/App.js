@@ -8,6 +8,9 @@ import About from '.components/about';
 
 import { browserRouter, Routes, Route } from 'react-router-dom';
 
+import "bootstrap/disy/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.mion.js";
+
 function App() {
   return (
     
@@ -21,6 +24,7 @@ function App() {
         <Route path="/about" element={<About/>} />
 
       </Routes>
+      
        <Footer></Footer>
        </div>
       </browserRouter>
