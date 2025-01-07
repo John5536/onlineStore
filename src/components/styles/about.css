@@ -1,0 +1,11 @@
+.about h1 {
+    color: darkcyan;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.about h3 {
+    color: lightslategray;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
