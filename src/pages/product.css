@@ -14,9 +14,20 @@
 
 }
 
+.product:hover{
+    border-color: tomato;
+    border-width: 2px;
+    box-shadow: 2px 2px 10px 1px gray;
+    transform: scale(1.03);
+}
+
 .product img {
     width: 250px;
 
+}
+
+.product img:hover{
+    transform:  skewX(-2deg);
 }
 
 .product h3 {
