@@ -1,0 +1,17 @@
+.catalog {
+    background-color: white;
+}
+
+.catalog h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+
+.catalog filter {
+    margin-bottom: 12px;
+}
+
+.catalog filter button{
+    margin-right: 5px;
+}
