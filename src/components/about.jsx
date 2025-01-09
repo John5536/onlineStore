@@ -9,4 +9,4 @@ function About(){
     );
 }
 
-export default Abaut;
+export default About;

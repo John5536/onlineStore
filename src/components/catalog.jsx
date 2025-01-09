@@ -1,6 +1,5 @@
 import Product from "./product";
 import "./styles/catalog.css";
-import Product from "./product";
 import{useState} from 'react'
 
 const dummyData = [

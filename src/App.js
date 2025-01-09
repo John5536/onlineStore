@@ -1,20 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
-import Footer from '.components/footer';
-import Catalog from'.components/catalog';
-import Home from '.components/home';
-import About from '.components/about';
+import Footer from './components/footer';
+import Catalog from'./components/catalog';
+import Home from './components/home';
+import About from './components/about';
 
-import { browserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import "bootstrap/disy/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.mion.js";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function App() {
   return (
     
-      <browserRouter>
+      <BrowserRouter>
       <div className="App">
       <Navbar></Navbar>
 
@@ -27,7 +29,7 @@ function App() {
       
        <Footer></Footer>
        </div>
-      </browserRouter>
+      </BrowserRouter>
        
       
        
