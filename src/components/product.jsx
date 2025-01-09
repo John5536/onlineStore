@@ -7,7 +7,7 @@ function Product(props){
                 <img src={props.data.image} alt="" />
                 <h3>{props.data.title}</h3>
 
-                <label>99.99</label>
+                <label></label>
                 <label>${props.data.price}</label>
 
                 <QuantityPicker></QuantityPicker>

@@ -5,12 +5,14 @@ import Footer from './components/footer';
 import Catalog from'./components/catalog';
 import Home from './components/home';
 import About from './components/about';
+import Admin from './components/admin';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/catalog" element={<Catalog/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/admin" element={<Admin/>} />
 
       </Routes>
       

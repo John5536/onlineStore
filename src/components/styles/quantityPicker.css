@@ -1,3 +1,7 @@
-.qt-picker label{
-    margin-right: 0 5px;
+.qt-picker {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    
+    
 }
