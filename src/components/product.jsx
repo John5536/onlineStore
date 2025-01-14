@@ -20,7 +20,7 @@ function Product(props){
 
                 <div className="parent">
                 <label></label>
-                <label>${props.data.price}</label>
+                <label>${props.data.price.toFixed(2)}</label>
                 </div>
 
                 <div className="parent">
