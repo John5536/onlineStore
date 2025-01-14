@@ -1,8 +1,13 @@
+import { useContext } from 'react';
 import './styles/navbar.css'
 
 import{Link} from 'react-router-dom';
+import GlobalContext from '../state/globalContext';
 
 function Navbar() {
+
+        const user = useContext(GlobalContext).user;
+        const cart = useContext(GlobalContext).cart;
     return (
         <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
             <div className="container-fluid">
@@ -26,10 +31,19 @@ function Navbar() {
                         </li>
                         
                     </ul>
-                    <form className="d-flex" role="search">
+                    <div className="d-flex" role="search">
+
+                        <Link className ='btn btn-outline-light' to="/user">{user.name}</Link>
+
+
+
+
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <Link className="btn btn-outline-light" to="/cart">
+                        {cart.length}
+                        </Link>
+                        
+                    </div>
                 </div>
             </div>
         </nav>

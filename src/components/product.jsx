@@ -1,9 +1,15 @@
+import { useContext } from "react";
 import QuantityPicker from "./quantityPicker";
 import "./styles/product.css"
+import GlobalContext from "../state/globalContext";
+
 function Product(props){
+    const globalAdd =useContext(GlobalContent).addProductToCart;
+    
 
     function onAdd() {
         console.log("test");
+        globalAdd(props.data);
     }
     return (
         
