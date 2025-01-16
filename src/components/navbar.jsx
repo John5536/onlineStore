@@ -40,6 +40,7 @@ function Navbar() {
 
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <Link className="btn btn-outline-light" to="/cart">
+                        <span className='class="badge text-bg-secondary"'>{cart.length}</span>view cart
                         {cart.length}
                         </Link>
                         

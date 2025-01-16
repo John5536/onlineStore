@@ -1,3 +1,7 @@
 .navbar{
     background-color: #a72c2c;
 }
+
+.navbar .btn-user {
+    margin-right: 6px;
+}
