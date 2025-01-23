@@ -31,6 +31,7 @@ function Catalog(){
         <div className="catalog page">
             <h1>Check out the amazing catalog</h1>
             <div className="filter">
+                <button onClick={clearFilter} className="btn btn-sm btn-primary">All</button>
             {categories.map(cat => <button onClick={()=> handleCategory(cat)} className="btn btn-sm btn-primary">{cat}</button>)}
             </div>
 
