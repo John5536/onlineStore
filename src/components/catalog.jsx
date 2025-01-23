@@ -1,42 +1,41 @@
+import dataservice from "../services/dataservice";
 import Product from "./product";
 import "./styles/catalog.css";
 import{useState} from 'react'
+import { useEffect } from "react";
 
-const dummyData = [
-   {"title": "orange",
-    "category":  "fruit",
-    "price": 15.99,
-    "image": "/images/oranges.png",
-    "_id": "45",
-   },
-   {"title": "strawberry",
-    "category":  "fruit",
-    "price": 4.90,
-    "image": "/images/strawberry.png",
-    "_id": "49",
-   },
-   {"title": "melon",
-    "category":  "fruit",
-    "price": 10.67,
-    "image": "/images/melon.png",
-    "_id": "40",
-   }
-    
-];
 
-const dummyCategories = ["fruit", "vegetables","beverages", "meat"]
+
+
 
 function Catalog(){
-    const [allProducts ,setAllProducts] = useState(dummyData);
-    const [categories, setCategories] = useState(dummyCategories);
+    const [allProducts ,setAllProducts] = useState([]);
+    const [categories, setCategories] = useState([]);
+    const [selectedCategory, setSelectedCategory] = useState("");
+    function loadData(){
+        const prods = dataservice.getProducts();
+        setAllProducts(prods);
+    }
+
+    function handleCategory(cat){
+        console.log("category clicked");
+        setSelectedCategory(cat);
+    }
+
+
+    useEffect(function () {
+        loadData();
+    }, []);
+
     return(
         <div className="catalog page">
             <h1>Check out the amazing catalog</h1>
             <div className="filter">
-            {categories.map(cat => <button className="btn btn-sm btn-primary">{cat}</button>)}
+            {categories.map(cat => <button onClick={()=> handleCategory(cat)} className="btn btn-sm btn-primary">{cat}</button>)}
             </div>
+
             {
-                allProducts.map( prod => <Product data={prod} />)
+                allProducts.filter( prod => prod.category == selectedCategory || !selectedCategory ).map( prod => <Product data={prod} />)
             }
             
         </div>
