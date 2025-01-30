@@ -1,7 +1,8 @@
 import { useState } from "react";
 import GlobalContext from "../globalContext";
+
 function GlobalProvider(props){
-    const [Cart, setCart] = useState ([]);
+    const [cart, setCart] = useState ([]);
     const [user, setUSer] = useState ({});
 
     function addProductToCart(prod){
@@ -14,7 +15,7 @@ function GlobalProvider(props){
     function removeProductFromCart() {}
 
     return (
-        <GlobalContext.Provider value {{
+        <GlobalContext.Provider value={{
             cart: cart,
             user: user,
             addProductToCart: addProductToCart,

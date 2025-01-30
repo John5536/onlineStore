@@ -12,7 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import GlobalProvider from './state/globalProvider/globalProvider.jsx'; // Corrected import path
+import GlobalProvider from './state/globalProvider/globaProvider.jsx'; // Corrected import path
 
 function App() {
   return (

@@ -20,7 +20,7 @@ const dummyData = [
 ];
 
 const dummyCategories = ["fruit", "vegetables","beverages", "meat"]
-class DataSeervice{
+class DataService{
     getProducts(){
         return dummyData;
     }
